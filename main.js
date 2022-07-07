@@ -158,13 +158,7 @@ client.on('message', async (channel, tags, message, self) => {
         let match = message.match(regex);
         // if there are emotes in the message
         if (match) {
-            for (let i = 0; i < Math.floor(Math.random() * 10) + 10; i++) {
-                setTimeout(() => {
-
-                createEmote(emote.emoteURL);
-                }, i * 100);
-            }
-
+            createEmote(emote.emoteURL);
         }
 
         //console.log(emoteName)
